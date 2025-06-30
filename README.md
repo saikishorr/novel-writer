@@ -80,7 +80,7 @@
 ### 2. 📥 Clone the repository
 
 ```
-git clone https://github.com/yourusername/novel-writer.git
+git clone https://github.com/saikishorr/novel-writer.git
 cd novel-writer
 ```
 ### 3. ⚙️ Configure database
