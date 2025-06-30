@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Novel Writer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background: url('./frontend/assets/bgimage.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: -1;
+}
+
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .register-btn {
+      background-color: #3498db;
+      color: white;
+    }
+
+    .login-btn:hover {
+      background-color: #43a047;
+    }
+
+    .register-btn:hover {
+      background-color: #2980b9;
+    }
+
+    .features, .about, .contact {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .features h3, .about h3, .contact h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      font-size: 17px;
+    }
+
+    .features ul li {
+      margin: 12px 0;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>✍️ Novel Writer</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="./frontend/login.php" class="login-link">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Write. Save. Export. Share.</h2>
+  <p>The ultimate online platform to write and manage your novels and stories, anytime, anywhere.</p>
+  <a href="./frontend/login.php"><button class="btn login-btn">🔐 Login</button></a>
+  <a href="./frontend/register.php"><button class="btn register-btn">📝 Register</button></a>
+</section>
+
+<section class="features" id="features">
+  <h3>🚀 Key Features</h3>
+  <ul>
+    <li>📝 Rich text editor with full formatting</li>
+    <li>📦 Save books to your own dashboard</li>
+    <li>📄 Export your books to PDF or DOCX</li>
+    <li>🔒 Secure login and user-specific storage</li>
+    <li>🗂️ Organize, edit, and manage unlimited stories</li>
+  </ul>
+</section>
+
+<section class="about" id="about">
+  <h3>👤 About Novel Writer</h3>
+  <p>
+    Novel Writer is a minimalist and powerful writing platform built for authors, students, and anyone who wants to write stories or long documents without distractions. Developed in PHP and MySQL with a strong focus on privacy and functionality.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h3>📩 Contact Us</h3>
+  <p>Have suggestions or questions? Reach out at <strong>support@novelwriter.local</strong></p>
+</section>
+
+<footer>
+  &copy; <?= date("Y") ?> Novel Writer. All rights reserved.
+</footer>
+
+</body>
+</html>

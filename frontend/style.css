@@ -1,0 +1,419 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+
+button {
+  padding: 10px 16px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+
+    #toast {
+      visibility: hidden;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    #toast.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #loader {
+      display: none;
+      margin-left: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+  /* Full-width layout for the entire editor section */
+.editor-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* CKEditor wrapper and editable area full-width */
+.ck-editor {
+  width: 100%;
+}
+
+.ck-editor__editable {
+  min-height: 500px;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Input field and buttons */
+.editor-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.editor-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #4CAF50;
+  cursor: pointer;
+}
+
+.editor-container button:hover {
+  background-color: #45a049;
+}
+
+/* Back button styling */
+a.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background-color: #2196F3;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+a.back-btn:hover {
+  background-color: #1976D2;
+}
+
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  #books {
+    margin-top: 20px;
+  }
+
+  .book-card {
+    background: #fff;
+    padding: 16px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-card input[type="text"] {
+    font-size: 16px;
+    padding: 8px 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .book-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .book-actions a,
+  .book-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .book-actions a {
+    background-color: #3498db;
+    color: white;
+  }
+
+  .book-actions a:hover {
+    background-color: #2e86c1;
+  }
+
+  .book-actions button {
+    background-color: #e74c3c;
+    color: white;
+  }
+
+  .book-actions button:hover {
+    background-color: #c0392b;
+  }
+
+  .dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.create-book {
+  background-color: #4CAF50;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.logoutbtn:hover {
+  background-color: #ed5050;
+}
+
+.logoutbtn {
+  background-color: #f10505;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+#modeToggle {
+  padding: 10px 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#modeToggle:hover {
+  background-color: #222;
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.book-card {
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-card input[type="text"] {
+  font-size: 16px;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.book-actions a,
+.book-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.book-actions a {
+  background-color: #3498db;
+  color: white;
+}
+
+.book-actions a:hover {
+  background-color: #2e86c1;
+}
+
+.book-actions button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.book-actions button:hover {
+  background-color: #c0392b;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #222;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+.dark-mode .book-card {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .create-book {
+  background-color: #2ecc71;
+}
+
+.dark-mode #modeToggle {
+  background-color: #f1c40f;
+  color: #000;
+}
+
+
+    .register-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .register-container label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .register-container input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .register-container .error-msg {
+      color: #e74c3c;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .register-container button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .register-container button:hover {
+      background-color: #43a047;
+    }
+
+    .register-container p {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .register-container a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .register-container a:hover {
+      text-decoration: underline;
+    }
