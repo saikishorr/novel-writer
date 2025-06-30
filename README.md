@@ -2,6 +2,17 @@
 
 **Novel Writer** is a PHP-based web application that allows users to write, edit, save, and export their novels. It's a minimal, clean writing platform designed for simplicity, focus, and functionality.
 
+![PHP](https://img.shields.io/badge/PHP-8.0%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![CKEditor](https://img.shields.io/badge/editor-CKEditor5-purple)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Commits](https://img.shields.io/github/commit-activity/m/saikishorr/novel-writer)
+![Last Commit](https://img.shields.io/github/last-commit/saikishorr/novel-writer)
+<!-- ![Version](https://img.shields.io/github/v/release/saikishorr/novel-writer?label=version) -->
+<!-- ![Issues](https://img.shields.io/github/issues/saikishorr/novel-writer)
+![Pull Requests](https://img.shields.io/github/issues-pr/saikishorr/novel-writer)-->
+
+
 ---
 
 ## 🚀 Features
@@ -111,4 +122,6 @@ MIT License — free to use and modify.
 
 ## 👋 Author
 Built with ❤️ by Saikishor Rasala
+
+
 
