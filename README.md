@@ -1,5 +1,5 @@
 # ✍️ Novel Writer
-
+ 
 **Novel Writer** is a PHP-based web application that allows users to write, edit, save, and export their novels. It's a minimal, clean writing platform designed for simplicity, focus, and functionality.
 
 ![PHP](https://img.shields.io/badge/PHP-8.0%2B-blue)
